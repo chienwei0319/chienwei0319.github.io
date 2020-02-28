@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Mosasaurus</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet"
+      type="text/css"
+      href="https://chienwei0319.github.io/css/normalize.css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet">
+<link rel="stylesheet"
+      type="text/css"
+      href="https://chienwei0319.github.io/css/font-awesome.min.css">
+<link rel="stylesheet"
+      type="text/css"
+      href="https://chienwei0319.github.io/css/main.css">
+<link rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"> 
+<link rel="shortcut icon"
+      href="https://chienwei0319.github.io/img/favicon.png">
+
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+  <h1><a href="/">HUANG, CHIEN WEI</a></h1>
+  <nav>
+    <span class="description">
+      Industrial Design @ Taipei Taiwan
+    </span>
+    <ul>
+      <li role="presentation"><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/contact">Contact</a> </li>
+    </ul>
+  </nav>
+</header>
+
+      <hr/>
+      
+
+<div id="work-page">
+  <div class="col-67">
+    <div class="carosel main-carousel">
+      
+      <div class="carousel-cell">
+        <img src="/img/Mosasaurus/01_Mosasaurus_01.jpg">
+      </div>
+      
+      <div class="carousel-cell">
+        <img src="/img/Mosasaurus/01_Mosasaurus_02.jpg">
+      </div>
+      
+      <div class="carousel-cell">
+        <img src="/img/Mosasaurus/01_Mosasaurus_03.jpg">
+      </div>
+      
+      
+    </div>
+    <br/>
+    <div class="nav-carousel">
+      
+      <img class="carousel-cell" src="/img/Mosasaurus/01_Mosasaurus_01.jpg">
+      
+      <img class="carousel-cell" src="/img/Mosasaurus/01_Mosasaurus_02.jpg">
+      
+      <img class="carousel-cell" src="/img/Mosasaurus/01_Mosasaurus_03.jpg">
+      
+      
+    </div>
+  </div>
+  <div class="col-33">
+    <div id="portfolio-info" class="work-description">
+      <h1>Mosasaurus</h1>
+      <h3>Yacht Concept Design</h3>
+      <ul>
+        
+        <li>Role: Designer / Project Manager</li>
+        
+        
+        <li>Recognition: Yacht Design Award 2014, Winner</li>
+        
+        
+      </ul>
+      <p>Took inspiration for the yacht design from the ancient king of
+dinosaur- Mosasaurus. Sleek as a bullet and seemingly as fast, the
+Mosasaurus will have the potential to reach speeds of up to 24 knots.</p>
+
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+  var main = document.querySelector('.main-carousel');
+  var nav = document.querySelector('.nav-carousel');
+  var flkty = new Flickity( main, {
+  contain: true,
+  pageDots: false,
+  wrapAround: true,
+  adaptiveHeight: true
+  });
+  var flickynav = new Flickity( nav, {
+  asNavFor: '.main-carousel',
+  contain: true,
+  pageDots: false,
+  freeScroll: true,
+  prevNextButtons: false
+  });
+</script>
+
+
+      <hr/>
+      <footer>
+  &copy; HUANG CHIEN WEI 2013-2020 and Built by YU TANG
+</footer>
+
+    </div>
+    <script
+      src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+var masonryElem = document.querySelector('.masonry');
+
+["resize", "load"].forEach(function(event) {
+  window.addEventListener(event, function() {
+    imagesLoaded( document.querySelector('.masonry'), function() {
+        masonryElem.style.display = "block";
+        var msnry = new Masonry( '.masonry', {
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true
+        });
+    });
+  }, false);
+});
+    </script>
+  </body>
+</html>
